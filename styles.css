@@ -1,0 +1,8 @@
+.social{
+  width: 20px;
+  height: 20px;
+}
+
+.social:hover{
+  transform: scale(1.2);
+}
