@@ -1,73 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Kayla Mayberry's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    <title>Kayla Mayberry's Portfolio</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="circle-container">
-        <div class="circle">
-          <button id="close">
-            <i class="fas fa-times"></i>
-          </button>
-          <button id="open">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
 
-      <div class="content">
-        <h1>Kayla Mayberry's Portfolio</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quod, ex
-          a ea laboriosam itaque est quae tempore vel blanditiis hic iste dicta
-          rerum facilis, quisquam possimus excepturi, delectus eligendi tempora
-          praesentium. Deserunt sint provident ullam assumenda. Incidunt,
-          facere. Autem, alias sunt quae veniam facilis praesentium id pariatur
-          similique illo dolor rem possimus eligendi, eaque, officia expedita ex
-          perspiciatis quaerat itaque excepturi at nemo aperiam. Eligendi
-          facilis porro delectus laudantium? Soluta ipsum quae beatae nemo
-          provident tenetur dolore cum dolorum, odio ducimus quam in neque
-          perferendis reprehenderit illo fugiat facere nam omnis rerum! Nobis
-          tempore nihil, corrupti voluptas voluptatem labore!
-        </p>
+  <body>
+    <div class="bg-container">
+      <div class="container">
+        <header>
+          <h1>Kayla Mayberry's Portfolio</h1>
+          <h3>
+            <a href="https://github.com/kaynmay" target="_blank"
+              >Github Profile</a
+            >
+          </h3>
+        </header>
+
+        <div>
+          <p class="tagline">Aspiring front-end developer.</p>
+
+          <div class="projects">
+            <div class="item">
+              <h2>Full Stack Open 2021</h2>
+              <p>
+                Deep dive into modern web development course I have been going
+                through starting September 2021. Each part of the course has
+                exercises to complete on your own using what was just learned. I
+                have created several React apps using hooks, state, and event
+                handlers.
+              </p>
+              <a href="https://github.com/kaynmay/fullStackOpen" target="_blank"
+                >View Project</a
+              >
+            </div>
+            <div class="item">
+              <h2>Rain Data</h2>
+              <p>
+                Python automation script that turned a daily 30 minute process
+                into being fully automated. A coworker at my company had a daily
+                task of going into DAT files and calculating the total rainfall
+                from the last 24 hours to enter into our Asset Management
+                system. I was tasked with finding a way to automate this
+                process. I created a script that copied over the DAT files,
+                calculated the total rainfall at each site, and wrote the totals
+                onto a CSV in a format that our system could read. A consultant
+                set up this script to run daily and pointed our system to go and
+                grab the CSV file every morning.
+              </p>
+              <a href="https://github.com/kaynmay/rainData.py" target="_blank"
+                >View Project</a
+              >
+            </div>
+            <div class="item">
+              <h2>Four Seasons</h2>
+              <p>
+                Processing animation project that displays the four seasons.
+                This was the final project for my Graphics and Visualization
+                course that was developed by two other students and myself. Each
+                season is displayed with a pixel art representation as the
+                background, an animation that runs on top of the background, and
+                the appropriate section of Vivaldi's Four Seasons as audio.
+              </p>
+              <a
+                href="https://github.com/kaynmay/fourSeasons.pde"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
 
         <footer>
-          <ul>
-            <a href="https://github.com/kaynmay">
-              <li><i class="fab fa-github"></i></li>
-            </a>
-            <a href="https://www.linkedin.com/in/kaynmay/">
-              <li><i class="fab fa-linkedin-in"></i></li>
-            </a>
-          </ul>
-          <p class="copyright">&copy; 2021 Kayla Mayberry</p>
+          <span>&copy; 2021 Kayla Mayberry</span>
         </footer>
       </div>
     </div>
-
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html"><i class="fas fa-home"> Home</i></a>
-        </li>
-        <li>
-          <a href="resume.html"><i class="fas fa-file"> Resume</i></a>
-        </li>
-        <li>
-          <a href="projects.html"
-            ><i class="fas fa-window-restore"> Projects</i></a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <script src="script.js"></script>
   </body>
 </html>
